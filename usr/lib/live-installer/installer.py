@@ -9,7 +9,7 @@ import commands
 import sys
 import parted
 
-gettext.install("live-installer", "/usr/share/linuxmint/locale")
+gettext.install("live-installer", "/usr/share/salentos/locale")
 
 CONFIG_FILE = '/etc/live-installer/live-installer.conf'
 

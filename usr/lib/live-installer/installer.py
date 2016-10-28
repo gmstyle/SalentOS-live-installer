@@ -486,13 +486,13 @@ class InstallerEngine:
             self.do_run_in_chroot("update-grub")
             self.do_configure_grub(our_total, our_current)
             grub_retries = 0
-            #Da commentare per esclutere errore grub-mkconfig, da riga 490 a riga 495
-            while (not self.do_check_grub(our_total, our_current)):
-                self.do_configure_grub(our_total, our_current)
-                grub_retries = grub_retries + 1
-                if grub_retries >= 5:
-                    self.error_message(message=_("WARNING: The grub bootloader was not configured properly! You need to configure it manually."))
-                    break
+            # Da commentare per esclutere errore grub-mkconfig, da riga 490 a riga 495
+            # while (not self.do_check_grub(our_total, our_current)):
+            #    self.do_configure_grub(our_total, our_current)
+            #    grub_retries = grub_retries + 1
+            #    if grub_retries >= 5:
+            #        self.error_message(message=_("WARNING: The grub bootloader was not configured properly! You need to configure it manually."))
+            #        break
 
         # recreate initramfs (needed in case of skip_mount also, to include things like mdadm/dm-crypt/etc in case its needed to boot a custom install)
         print " --> Configuring Initramfs"

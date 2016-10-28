@@ -7,6 +7,7 @@ import time
 import string
 import threading
 
+# eliminare pagine non necessarie (pag necessaria welcome.html) 
 pages = [
 'welcome.html',
 'giants.html',

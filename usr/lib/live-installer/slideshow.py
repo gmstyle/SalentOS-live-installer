@@ -9,12 +9,7 @@ import threading
 
 # eliminare pagine non necessarie (pag necessaria welcome.html) 
 pages = [
-'welcome.html',
-'giants.html',
-'desktop-ready.html',
-'windows.html',
-'safe.html',
-'community.html'
+'welcome.html'
 ]
 
 class Slideshow(threading.Thread):
